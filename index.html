@@ -31,10 +31,16 @@
 
 
     <!-- Fonts & CSS -->
+
     <link rel="stylesheet" href="css/style.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;600&display=swap"
+        rel="stylesheet">
+
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <!-- Lightbox CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="assets/hero-image.jpeg">
@@ -101,8 +107,9 @@
     </section> -->
 
     <section id="portfolio" class="portfolio">
-        <h2>Selected Works</h2>
-        <div class="gallery" id="gallery">
+        <h2 data-aos="fade-up">Selected Works</h2>
+        <div class="gallery" data-aos="fade-up" data-aos-delay="100">
+
             <img src="assets/hero-image.jpeg" alt="Work 1" onclick="openViewer(0)">
             <img src="assets/about-image.jpeg" alt="Work 2" onclick="openViewer(1)">
             <img src="assets/showreel-bg.jpeg" alt="Work 3" onclick="openViewer(2)">
@@ -145,6 +152,8 @@
     <script src="js/parallax.js"></script>
     <!-- Lightbox JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
 
 </body>
 
